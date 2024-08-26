@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payslip</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .payslip-box {
+      border: 2px solid #343a40;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: white;
+      position: relative;
+    }
+
+    .payslip-box::before {
+      content: "";
+      background-image: url('Bridgefix_black.png');
+      background-size: cover;
+      opacity: 0.1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .separator {
+      border-top: 2px solid #343a40;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+      border: 2px solid #343a40;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="payslip-box">
+      <div class="row header-flex">
+        <div>
+          <img src="Bridgefix_black.png" alt="Logo" height="80">
+        </div>
+        <div class="text-right">
+          <h1>BridgeFix Technology Pvt. Ltd.</h1>
+          <p>Plot No. 388, PU-4, Scheme Number 54 Indore,</p>
+          <p>Vijay Nagar, India (MP)</p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h5>Payslip for the Month</h5>
+          <h5>July 2024</h5>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h4>EMPLOYEE DETAILS</h4>
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <td>Employee Name</td>
+                <td>: Shivani Mishra</td>
+              </tr>
+              <tr>
+                <td>Designation</td>
+                <td>: Senior Frontend Developer</td>
+              </tr>
+              <tr>
+                <td>Date of Joining</td>
+                <td>: 03, May, 2021</td>
+              </tr>
+              <tr>
+                <td>Pay Period</td>
+                <td>: July 2024</td>
+              </tr>
+              <tr>
+                <td>Pay Date</td>
+                <td>: 31-07-2024</td>
+              </tr>
+              <tr>
+                <td class="separator" colspan="2"></td>
+              </tr>
+              <tr>
+                <td>Bank Account No</td>
+                <td>: 50100533212439</td>
+              </tr>
+              <tr>
+                <td>PAN</td>
+                <td>: DBAPM4123A</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-primary mb-3">
+            <div class="card-header">
+              <h4 class="card-title text-center">1,08,125/-</h4>
+              <h6 class="card-subtitle text-center mb-2">Employee Net Pay</h6>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center">Paid Days: 23</p>
+              <p class="card-text text-center">LOP Days: 00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h4>EARNINGS</h4>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Basic</td>
+                <td>63,800</td>
+              </tr>
+              <tr>
+                <td>House Rent Allowance</td>
+                <td>42,533</td>
+              </tr>
+              <tr>
+                <td>Convince Allowance</td>
+                <td>800</td>
+              </tr>
+              <tr>
+                <td>Medical Allowance</td>
+                <td>1,200</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="text-right"><strong>Gross Earnings</strong></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="text-right"><strong>1,08,333</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <h4>DEDUCTIONS</h4>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Professional Tax</td>
+                <td>208</td>
+              </tr>
+              <tr>
+                <td>Loss of Pay</td>
+                <td>00</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="text-right"><strong>Total Deductions</strong></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="text-right"><strong>208</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <div class="card border-primary mb-3">
+            <div class="card-body">
+              <h4 class="card-title">TOTAL NET PAYABLE</h4>
+              <p class="card-text">Gross Earnings - Total Deductions</p>
+              <h4 class="card-title text-center">1,08,125/-</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
